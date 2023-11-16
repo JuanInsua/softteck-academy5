@@ -1,10 +1,10 @@
-# To-Do App
+# To-Do App :coffee:
 
-## Descripción
+## Descripción  :page_with_curl:
 
-Esta es una aplicación de lista de tareas que permite a los usuarios gestionar y organizar sus tareas diarias. La aplicación está construida utilizando Java con Spring Boot para el backend y Thymeleaf para el frontend.
+Esta es una aplicación de lista de tareas que permite a los usuarios gestionar y organizar sus tareas diarias. La aplicación está construida utilizando [Java](https://docs.oracle.com/en/java/) con [Spring Boot](https://spring.io) para el backend y [Thymeleaf](https://www.thymeleaf.org/documentation.html) para el frontend.
 
-## Requisitos Previos
+## Requisitos Previos  :key:
 
 - JDK 8 o superior
 - MySQL
@@ -14,50 +14,30 @@ Esta es una aplicación de lista de tareas que permite a los usuarios gestionar 
 
 1. **Clonar el Repositorio**
 
-##### bash
-git clone https://github.com/tu-usuario/todo-app.git
+git clone https://github.com/JuanInsua/softteck-academy5  
 cd todo-app
-Configurar la Base de Datos
 
-Crea una base de datos MySQL remota.
+2. **Configurar la Base de Datos**
+
+Crea una base de datos MySQL remota.  
 Actualiza las configuraciones de la base de datos en el archivo application.properties dentro del proyecto Spring Boot.
-Configurar Variables de Entorno
 
-Abre el proyecto en tu IDE y configura las variables de entorno necesarias.
-Puedes configurar la conexión a la base de datos, el puerto del servidor, etc., según sea necesario.
+3. **Configurar Variables de Entorno**
+
+Abre el proyecto en tu IDE y configura las variables de entorno necesarias.  
+Puedes configurar la conexión a la base de datos, el puerto del servidor, etc., según sea necesario.  
 Ejecutar la Aplicación
 
-Inicia la aplicación desde tu IDE o usando Maven:
+4. **Inicia la aplicación desde tu IDE o usando Maven:**
 
-##### bash
-mvn spring-boot:run
-La aplicación estará disponible en http://localhost:puerto.
+mvn spring-boot:run  
+La aplicación estará disponible en http://localhost:puerto.  (próximamente)
 
-## Estructura del Proyecto
-todo-app/
-|-- src/
-|   |-- main/
-|       |-- java/
-|       |   |-- com/
-|       |       |-- tu/
-|       |           |-- app/
-|       |               |-- controllers/
-|       |               |-- models/
-|       |               |-- repositories/
-|       |               |-- security/
-|       |               |-- services/
-|       |               |-- TodoAppApplication.java
-|       |-- resources/
-|           |-- static/
-|           |-- templates/
-|           |-- application.properties
-|-- pom.xml
-|-- otros-archivos
-## Uso
-Accede a la aplicación desde tu navegador utilizando http://localhost:puerto.
-Inicia sesión con tu usuario y contraseña.
+## Uso  :eyes:
+Accede a la aplicación desde tu navegador.  
+Inicia sesión con tu usuario y contraseña.  
 Gestiona tus tareas utilizando la interfaz de usuario.
-## Contribuciones
+## Contribuciones  :hammer:
 Si deseas contribuir, sigue estos pasos:
 
 1. Haz un fork del proyecto.
@@ -65,3 +45,7 @@ Si deseas contribuir, sigue estos pasos:
 3. Haz tus cambios y realiza un commit: git commit -m 'Agrega nueva funcionalidad'
 4. Empuja la rama a tu fork: git push origin feature/nueva-funcionalidad
 5. Crea un pull request en el repositorio original.
+
+
+
+### Gracias ! 
