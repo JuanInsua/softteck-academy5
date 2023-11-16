@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Agrega los enlaces a tus archivos CSS aquí -->
+    <!-- Por ejemplo, si estás utilizando Bootstrap: -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<!-- Encabezado -->
+<header class="bg-dark text-white text-center py-4">
+    <h1>ToDoApp</h1>
+</header>
+<!-- Contenido principal -->
+<div class="container mt-4">
+    <!-- Card para el formulario de login -->
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Login</h2>
+            <form id="loginForm" th:action="@{/api/v1/auth/login}" th:object="${loginUserDto}" method="post">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" class="form-control" th:field="*{email}" />
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" class="form-control" th:field="*{password}" />
+                </div>
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Login</button>
+                <a th:href="@{/web/register}" class="btn btn-link">Registrarse</a>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Pie de página -->
+<footer class="bg-dark text-white text-center py-3">
+    &copy; 2023 Tu Aplicación. Todos los derechos reservados.
+    <!-- Puedes agregar más contenido al pie de página según tus necesidades -->
+</footer>
+<!-- Enlaces a Bootstrap JS y Popper.js (necesarios para algunos componentes de Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script th:src="@{/login.js}"></script>
+</body>
+</html>
+
